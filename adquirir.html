@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LembraQR - Eternizando Memórias</title>
+  <link rel="icon" href="qr/icons/logotipo.png" type="image/png">
+  <script src="qr/protec.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background-color:#e2d9d9;color:#111;display:flex;flex-direction:column;align-items:center;min-height:100vh}.p_titulo_container{position:relative;width:80%;max-width:1200px;margin-top:6vh;border-radius:20px;overflow:visible}.p_titulo_container::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;height:90%;background-image:url(qr/icons/nuvem_gif.gif);background-size:cover;background-position:center;border-radius:20px;filter:brightness(1.2) contrast(1.1);opacity:.35;z-index:0;pointer-events:none}.p_titulo_container::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;height:90%;border-radius:20px;pointer-events:none;z-index:1;background:radial-gradient(circle,transparent 70%,rgba(255,255,255,.5) 85%,rgba(255,255,255,.8) 100%);box-shadow:0 0 30px 15px rgba(255,255,255,.6)}.p_titulo{position:relative;z-index:2;width:100%;padding:30px 40px;border-radius:20px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.3);box-shadow:0 4px 12px rgba(0,0,0,.08);border:1px solid rgba(255,255,255,.3);transition:transform .3s ease}.p_titulo:hover{transform:scale(1.01)}.p_titulo h1{font-size:clamp(2rem,4.2vw,4rem);font-weight:800;color:#e0e0e0;text-shadow:2px 2px 6px rgba(0,0,0,.4)}.p_apresentacao{width:90%;max-width:1300px;min-height:70vh;border-radius:20px;margin-top:5vh;padding:40px;display:flex;align-items:center;justify-content:space-between;gap:40px;background:rgba(255,255,255,.2);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 12px 32px rgba(0,0,0,.1);border:1px solid rgba(255,255,255,.25)}.p_apresentacao .texto{flex:1}.p_apresentacao .texto h1{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:1rem;color:#474747}.p_apresentacao .texto p{font-size:clamp(1.05rem,2.5vw,1.25rem);line-height:1.75;color:#333;margin-bottom:.9rem}.p_apresentacao video{width:30%;height:auto;aspect-ratio:9/10;border-radius:12px;object-fit:cover;box-shadow:0 8px 24px rgba(0,0,0,.4)}.p_exemplo{display:flex;flex-direction:row;gap:20px;width:90%;max-width:1300px;min-height:70vh;border-radius:20px;margin-top:5vh;padding:40px;background:rgba(255,255,255,.2);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 12px 32px rgba(0,0,0,.1);border:1px solid rgba(255,255,255,.25)}.p_exemplo .texto{flex:1 1 auto}.p_exemplo .texto h1{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:1rem;color:#474747}.p_exemplo .texto p{font-size:clamp(1.05rem,2.5vw,1.25rem);line-height:1.75;color:#333;margin-bottom:.9rem}.p_exemplo .imagens{flex-shrink:0;width:40%;max-width:280px;min-height:280px;height:100wvh;position:relative;margin:0 20px}.p_exemplo .imagens img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:0 8px 16px rgba(0,0,0,.3);opacity:0;transform:perspective(600px) rotateY(-12deg);transition:opacity .6s ease-in-out,transform .6s ease-in-out;z-index:0}.p_exemplo .imagens img.imagem-ativa{opacity:1;z-index:1}.p_exemplo .imagens img{transition:opacity .6s ease-in-out,filter .6s ease-in-out;filter:blur(0)}.p_exemplo .imagens img.imagem-ativa{opacity:1;filter:blur(0);z-index:1}.p_exemplo .imagens img.blur-out{filter:blur(8px);opacity:0;z-index:0}.p_passos{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;width:90%;max-width:1300px;margin-top:5vh;padding:40px;border-radius:20px;background:rgba(255,255,255,.2);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 12px 32px rgba(0,0,0,.1);border:1px solid rgba(255,255,255,.25)}.p_passos .card{width:300px;max-width:90%;margin:20px;padding:20px;border-radius:16px;background:rgba(255,255,255,.25);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 20px rgba(0,0,0,.15);border:1px solid rgba(255,255,255,.3);height:auto;transition:transform .3s ease}.p_passos .card:hover{transform:scale(1.02)}.p_passos .card:hover{transform:translateY(-6px);box-shadow:0 16px 32px rgba(0,0,0,.15)}.p_passos .card h1{font-size:clamp(1.4rem,3vw,1.8rem);color:#474747;margin-bottom:12px}.p_passos .card p{font-size:clamp(1rem,2.3vw,1.15rem);color:#333;line-height:1.6}.p_teste{display:flex;align-items:center;justify-content:space-between;gap:20px;width:90%;max-width:1300px;margin:5vh auto;padding:40px;border-radius:20px;background:rgba(255,255,255,.2);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 12px 32px rgba(0,0,0,.1);border:1px solid rgba(255,255,255,.25);flex-wrap:wrap}.p_teste h1{flex:1;font-size:clamp(1.8rem,4vw,2.5rem);color:#474747}.p_teste img{width:200px;max-width:40%;height:auto;margin-right:15%;border-radius:12px;box-shadow:0 8px 16px rgba(0,0,0,.3);object-fit:contain}.p_valor{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:24px;width:90%;max-width:1400px;margin:6vh auto;padding:32px;border-radius:24px;background:rgba(255,255,255,.15);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 16px 40px rgba(0,0,0,.08);border:1px solid rgba(255,255,255,.2)}.card_valor{padding:28px 24px;background:rgba(255,255,255,.25);border-radius:20px;box-shadow:0 8px 28px rgba(0,0,0,.1);border:1px solid rgba(255,255,255,.25);transition:transform .3s ease,box-shadow .3s ease,background .3s ease;text-align:center;height:auto;flex:1 1 300px;max-width:400px}.card_valor:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(0,0,0,.18);background:rgba(255,255,255,.3)}.card_valor h1{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:16px;color:#2a2a2a;font-weight:700;letter-spacing:-.02em}.card_valor p{font-size:clamp(.95rem,1.8vw,1.1rem);color:#333;margin-bottom:10px;line-height:1.5;font-weight:500}.card_valor p em{font-size:clamp(.75rem,1.5vw,.85rem);color:#555;font-style:italic;display:block;line-height:1.6;margin-top:6px;max-width:85%;margin-left:auto;margin-right:auto;opacity:.9}.card_valor .preco{font-size:clamp(1.3rem,2.2vw,1.7rem);font-weight:700;color:#fff;background:linear-gradient(135deg,#bce600 0,#00c853 100%);padding:12px 20px;border-radius:14px;margin:16px auto;display:inline-block;box-shadow:0 6px 16px rgba(0,200,83,.3);transition:transform .2s ease,box-shadow .2s ease}.card_valor .preco:hover{box-shadow:0 8px 24px rgba(0,200,83,.4);cursor:pointer}.qrcode_wrapper{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:12px}.tipo_qrcode{flex:1 1 240px;background:rgba(255,255,255,.2);padding:16px;border-radius:14px;border:1px solid rgba(255,255,255,.35);box-shadow:0 6px 16px rgba(0,0,0,.06);min-width:200px;transition:background .3s ease}.tipo_qrcode p{font-size:clamp(.9rem,1.7vw,1rem);color:#333;margin-bottom:8px;line-height:1.5}.tipo_qrcode .preco{background:linear-gradient(135deg,#bce600 0,#00c853 100%);padding:10px 16px;border-radius:12px;margin:10px auto;box-shadow:0 4px 12px rgba(0,200,83,.25)}.tipo_qrcode .preco.indisponivel{background:#ccc;color:#666;box-shadow:none;cursor:not-allowed}@media (max-width:600px){.p_valor{padding:20px;gap:16px}.card_valor{padding:20px;max-width:100%}.qrcode_wrapper{flex-direction:column;align-items:stretch;gap:12px}.tipo_qrcode{min-width:100%;padding:12px}.card_valor p em{font-size:clamp(.7rem,1.4vw,.8rem)}.card_valor h1{font-size:clamp(1.4rem,3vw,1.8rem)}.card_valor .preco{font-size:clamp(1.1rem,2vw,1.4rem);padding:10px 16px}}.footer_fixado{width:95%;margin:0;margin-bottom:20px;margin-top:40px;border-radius:10px;background:rgba(131,131,131,.7);color:#fff;text-align:center;padding:20px;font-size:.9rem;display:flex;flex-direction:column;align-items:center;backdrop-filter:blur(10px);box-shadow:0 4px 12px rgba(0,0,0,.15)}.footer_fixado .footer_links{margin-top:5px;display:flex;gap:20px;flex-wrap:wrap}.footer_fixado .footer_links a{color:gold;text-decoration:none;font-weight:500}.footer_fixado .footer_links a:hover{text-decoration:underline}.btn_adquira_agora{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);z-index:1000;width:clamp(200px,30vw,320px);padding:.9rem 2rem;background:linear-gradient(135deg,#00eb00,#00e676,#50ff40);color:#fff;font-size:clamp(1rem,2.5vw + .8rem,1.3rem);font-weight:800;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.3;text-align:center;text-decoration:none;text-transform:uppercase;letter-spacing:.05em;border-radius:60px;box-shadow:0 6px 20px rgba(22,107,5,.5),0 0 30px rgba(0,255,100,.6);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:1rem;transition:transform .3s ease,box-shadow .3s ease,background .5s ease;will-change:transform,box-shadow,background;overflow:hidden}.btn_adquira_agora::before{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);clip-path:inset(0);animation:shimmer 3s infinite ease-in-out;pointer-events:none}.btn_adquira_agora::after{content:'';position:absolute;inset:-2px;border-radius:60px;box-shadow:0 0 15px rgba(0,255,100,.6),0 0 25px rgba(63,202,50,.5);opacity:.7;animation:pulse-glow 3s infinite ease-in-out}.btn_adquira_agora .btn_icon{position:relative;width:3rem;height:3rem;object-fit:contain}.btn_adquira_agora .btn_icon::after,.btn_adquira_agora .btn_icon::before{content:'';position:absolute;top:-.6rem;left:-.6rem;right:-.6rem;bottom:-.6rem;border:3px solid rgba(0,255,100,.4);border-radius:50%;box-shadow:0 0 12px rgba(0,255,100,.7);animation:gooey-spin 2.5s linear infinite}.btn_adquira_agora .btn_icon::after{border-color:rgba(67,218,54,.4);box-shadow:0 0 10px rgba(86,255,64,.6);animation:gooey-spin-reverse 2s linear infinite}.btn_adquira_agora:hover::before{animation:shimmer 1.5s infinite ease-in-out}.btn_adquira_agora:hover{transform:translateX(-50%) scale(1.1);background:linear-gradient(135deg,#56ff40,#00e676,#00eb1f);box-shadow:0 8px 25px rgba(27,235,0,.7),0 0 35px rgba(80,255,64,.6);animation:bounce .3s ease-in-out}.btn_adquira_agora:focus-visible{outline:4px solid #00eb00;outline-offset:3px;box-shadow:0 8px 25px rgba(20,235,0,.8),0 0 35px rgba(80,255,64,.7);animation:pulse .5s ease-in-out}@keyframes shimmer{0%{left:-100%}50%{left:100%}100%{left:100%}}@keyframes pulse-glow{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.02)}}@keyframes gooey-spin{0%{transform:rotate(0) scale(1);border-color:rgba(0,255,100,.4)}50%{transform:rotate(180deg) scale(1.15);border-color:rgba(0,255,100,.6)}100%{transform:rotate(360deg) scale(1);border-color:rgba(0,255,100,.4)}}@keyframes gooey-spin-reverse{0%{transform:rotate(360deg) scale(1);border-color:rgba(64,255,64,.4)}50%{transform:rotate(180deg) scale(1.1);border-color:rgba(80,255,64,.6)}100%{transform:rotate(0) scale(1);border-color:rgba(80,255,64,.4)}}@keyframes bounce{0%,100%{transform:translateX(-50%) scale(1.1)}50%{transform:translateX(-50%) scale(1.15)}}@keyframes pulse{0%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.05)}100%{transform:translateX(-50%) scale(1)}}@media (max-width:480px){.btn_adquira_agora{width:clamp(180px,28vw,260px);padding:.7rem 1.2rem;font-size:clamp(.9rem,2vw + .7rem,1.1rem);bottom:1rem;gap:.6rem}.btn_adquira_agora .btn_icon{width:2.2rem;height:2.2rem}.btn_adquira_agora .btn_icon::after,.btn_adquira_agora .btn_icon::before{top:-.5rem;left:-.5rem;right:-.5rem;bottom:-.5rem;border-width:2px}}@media (prefers-reduced-motion:reduce){.btn_adquira_agora .btn_icon::after,.btn_adquira_agora .btn_icon::before,.btn_adquira_agora::after,.btn_adquira_agora::before,.btn_adquira_agora:focus-visible,.btn_adquira_agora:hover{animation:none;transition:none}}.inline_logo{height:1.7em;vertical-align:middle;padding-bottom:6px}.p_social{display:flex;width:80%;flex-direction:row;justify-content:flex-end;padding-right:4vh;padding-top:2vh;gap:1.3vh}.p_social img{width:7vh;height:7vh;border:4px solid #ffffff81;border-radius:10px;object-fit:contain;background-color:#fff;transition:transform .3s ease,box-shadow .3s ease;cursor:pointer}.p_social img:hover{transform:scale(1.1);box-shadow:0 0 8px rgba(0,0,0,.3)}@media (max-width:768px){.p_titulo_container{width:90%}.inline_logo{height:1.8em}.btn_adquira_agora{width:70%;max-width:70%;padding:12px 20px;font-size:calc(.8rem + 2vw);bottom:8%}.p_titulo{padding:20px;flex-direction:column;text-align:center}.p_titulo h1{font-size:clamp(2.2rem,5vw,4.5rem);text-shadow:2px 2px 6px rgba(0,0,0,.65)}.p_apresentacao,.p_exemplo{flex-direction:column;align-items:center;padding:30px 20px;gap:20px}.p_apresentacao video{width:100%;max-height:500px;margin-top:20px}.p_exemplo{flex-direction:column;align-items:center;gap:10px}.p_exemplo .imagens{position:static;width:100%;max-width:300px;height:auto;margin:0 auto}.p_exemplo .imagens img{position:static;display:none;width:100%;height:500px;max-height:500px;opacity:0;transform:none;box-shadow:0 8px 16px rgba(0,0,0,.3);margin-bottom:10px;border-radius:12px}.p_exemplo .imagens img.imagem-ativa{opacity:1;z-index:auto}.p_passos{flex-direction:column;align-items:center;padding:30px 20px}.p_passos .card{padding:20px;width:90%;margin:10px auto;font-size:.95rem}.p_passos .card h1{font-size:1.2rem}.p_passos .card p{font-size:1rem}.p_teste img{width:200px;max-width:40%;height:auto;margin-right:0;border-radius:12px;box-shadow:0 8px 16px rgba(0,0,0,.3);object-fit:contain}.p_valor{flex-direction:column;align-items:center;padding:30px 20px}.card_valor{width:100%;max-width:350px}.p_social{width:95%;justify-content:flex-start;padding-left:4vh;padding-top:1vh;gap:1vh;flex-wrap:wrap}.p_social img{width:40px;height:40px;border-radius:15px}}@media (max-width:450px){.p_social{width:95%;justify-content:flex-start;padding-left:4vh;padding-top:1vh;gap:1vh;flex-wrap:wrap}.p_social img{width:10vw;height:10vw;border-radius:15px}}
+
+  </style>
+</head>
+
+<body>
+  <div class="p_titulo_container">
+    <div class="p_titulo">
+      <h1>LembraQR</h1>
+    </div>
+  </div>
+  <div class="p_social">
+     <a href="https://www.youtube.com/@lembraqr-ofc" target="_blank" rel="noopener noreferrer">
+  <img src="qr/icons/redes_socias/youtube.png" alt="YouTube">
+</a>
+<a href="https://www.instagram.com/lembraqrofc/" target="_blank" rel="noopener noreferrer">
+  <img src="qr/icons/redes_socias/instagram.png" alt="Instagram">
+</a>
+<a href="https://www.facebook.com/profile.php?id=61576988415869" target="_blank" rel="noopener noreferrer">
+  <img src="qr/icons/redes_socias/facebook.png" alt="Facebook">
+</a>
+
+  </div>
+  <div class="p_apresentacao">
+    <div class="texto">
+      <h1>O que é o <img src="qr/icons/s_icone_base.png" alt="LembraQR" class="inline_logo">?</h1>
+      <p>Já imaginou poder eternizar as memórias de alguém especial de forma única e acessível?</p>
+      <p>Com o <strong>LembraQR</strong>, transformamos lembranças em homenagens vivas. Através de um QR Code, familiares e amigos têm acesso a um memorial online repleto de histórias, fotos, vídeos, mensagens e muito carinho — tudo aquilo que mantém viva a presença de quem partiu.</p>
+      <p>Mais do que tecnologia, oferecemos um espaço para preservar vínculos, celebrar vidas e manter o amor sempre por perto.</p>
+    </div>
+    <video src="qr/midias/creativo.mp4" autoplay muted playsinline controls></video>
+  </div>
+  <div class="p_exemplo">
+    <div class="texto">
+      <h1>Como funciona o<img src="qr/icons/s_icone_base.png" alt="LembraQR" class="inline_logo">?</h1>
+      <p>Ao escanear o QR Code, você é levado a um memorial digital pensado para manter vivas as memórias mais significativas.</p>
+      <p>Imagens, vídeos, mensagens e histórias se reúnem em um só lugar, permitindo que lembranças queridas estejam sempre próximas — não importa onde você esteja.</p>
+      <p>O <strong>LembraQR</strong> transforma cada memória em um ponto de conexão, fortalecendo laços e eternizando sentimentos que o tempo não apaga.</p>
+    </div>
+    <div class="imagens">
+      <img src="qr/previas/001.png" alt="Foto 1" class="imagem-ativa">
+      <img src="qr/previas/002.png" alt="Foto 2">
+      <img src="qr/previas/003.png" alt="Foto 3">
+    </div>
+  </div>
+  <div class="p_teste">
+    <h1>Teste com QR Code ao lado:</h1>
+    <img src="qr/qrcode_teste.jpg" alt="QR Code">
+  </div>
+
+  <div class="p_passos">
+    <div class="card">
+      <h1>1. Entre em contato</h1>
+      <p>Fale conosco para começar a criar uma homenagem personalizada para quem você ama.</p>
+    </div>
+
+    <div class="card">
+      <h1>2. Envie as lembranças</h1>
+      <p>Nos envie fotos, mensagens, vídeos ou qualquer memória que deseje eternizar.</p>
+    </div>
+
+    <div class="card">
+      <h1>3. Receba o QR Code</h1>
+      <p>Receba um QR Code exclusivo que leva diretamente ao memorial digital criado.</p>
+    </div>
+  </div>
+
+  <div class="p_valor">
+    <div class="card_valor">
+      <h1>QrCode</h1>
+
+      <div class="qrcode_wrapper">
+        <div class="tipo_qrcode">
+          <p><strong>Tipo:</strong> Adesivo Plastificado</p>
+          <p>6x6cm de Tamanho.</p>
+          <p class="preco">R$ 20 /unid</p>
+          <p><em>Preço por unicdade.</em></p>
+        </div>
+
+        <div class="tipo_qrcode">
+          <p><strong>Tipo:</strong> Placa Inox</p>
+          <p>6x6cm de Tamanho.</p>
+          <p class="preco indisponivel">indisponível</p>
+          <p><em>Preço por unicdade.</em></p>
+        </div>
+      </div>
+  </div>
+  <div class="card_valor">
+    <h1>1 Ano</h1>
+    <p>30 Fotos</p>
+    <p>2 Videos</p>
+    <p>2 Emojis na animação</p>
+    <p>até 20 Mensagens Especiais</p>
+    <p>Até 700 Palavras na Biografia</p>
+    <p class="preco">R$70 + QrCode</p>
+    <p><em>- Até 3x no cartão</em></p>
+    <p><em>É necessário pagar novamente após 1 ano para manter o memorial funcionando.</em></p>
+  </div>
+  <div class="card_valor">
+    <h1>3 Anos</h1>
+    <p>50 Fotos</p>
+    <p>2 Videos</p>
+    <p>5 Emojis na animação</p>
+    <p>até 30 Mensagens Especiais</p>
+    <p>Até 1200 Palavras na Biografia</p>
+    <p class="preco">R$160 + QrCode</p>
+    <p><em>- Até 3x no cartão</em></p>
+    <p><em>É necessário pagar novamente após 3 anos para manter o memorial funcionando.</em></p>
+  </div>
+</div>
+</div>
+<a href="https://wa.me/0000000000?text=Quero%20adquirir%20o%20LembraQR!" 
+   target="_blank" 
+   class="btn_adquira_agora" 
+   role="button" 
+   aria-label="Adquira agora via WhatsApp">
+  <img src="qr/icons/whatsapp.png" alt="Ícone do WhatsApp" class="btn_icon" />
+  Adquira Agora
+</a>
+<footer class="footer_fixado">
+  <p>&copy; 2025 LembraQR. Todos os direitos reservados.</p>
+  <div class="footer_links">
+    <a href="./normas/termos-de-uso/">Termos de Uso</a>
+    <a href="./normas/politica-de-privacidade/">Política de Privacidade</a>
+  </div>
+</footer>
+
+  <script>
+  const imagens=document.querySelectorAll(".p_exemplo .imagens img");let index=0;imagens.forEach((e,l)=>{0===l?(e.classList.add("imagem-ativa"),e.style.display="block",e.style.filter="blur(0)"):(e.style.display="none",e.style.filter="blur(0)")}),setInterval(()=>{let e=imagens[index];e.classList.remove("imagem-ativa"),e.classList.add("blur-out"),setTimeout(()=>{e.style.display="none",e.classList.remove("blur-out")},600),imagens[index].style.display="none",index=(index+1)%imagens.length;let l=imagens[index];l.style.display="block",l.style.filter="blur(8px)",l.classList.add("imagem-ativa"),setTimeout(()=>{l.style.filter="blur(0)"},20)},3e3);
+  </script>
+</body>
+</html>
