@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política De Privacidade - LembraQr</title>
+  <style>
+  /* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f2f2;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Título */
+.p_titulo_container {
+  position: relative;
+  width: 85%;
+  max-width: 1200px;
+  margin-top: 6vh;
+  border-radius: 20px;
+  overflow: visible;
+}
+
+.p_titulo_container::before {
+  content: "";
+  position: absolute;
+  inset: 5%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  filter: brightness(1.2) contrast(1.1);
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.p_titulo_container::after {
+  content: "";
+  position: absolute;
+  inset: 5%;
+  border-radius: 20px;
+  background: radial-gradient(
+    circle,
+    transparent 70%,
+    rgba(255, 255, 255, 0.5) 85%,
+    rgba(255, 255, 255, 0.85) 100%
+  );
+  box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.p_titulo {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 30px 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  user-select: none;
+}
+
+.p_titulo:hover {
+  transform: scale(1.015);
+}
+
+.p_titulo h1 {
+  font-size: clamp(2rem, 4.2vw, 4rem);
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+/* Conteúdo dos Termos */
+.p_termos_container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 5vh auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #333;
+  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+}
+
+.p_termos_container h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #444;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.p_termos_container p,
+.p_termos_container li {
+  margin-bottom: 1rem;
+}
+
+.p_termos_container ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.p_termos_container ol li {
+  margin-bottom: 0.8rem;
+}
+
+/* Rodapé */
+.footer_fixado {
+  width: 95%;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+  background: rgba(80, 80, 80, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  user-select: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .p_titulo_container {
+    width: 95%;
+  }
+
+  .p_titulo {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .p_titulo h1 {
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+  }
+
+  .p_termos_container {
+    padding: 20px;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="p_titulo_container" aria-label="Título da página Política de Privacidade">
+  <div class="p_titulo">
+    <h1>Política de Privacidade</h1>
+  </div>
+</div>
+
+<main class="p_termos_container" role="main" tabindex="0">
+  <p>Bem-vindo à Política de Privacidade do LembraQr. Este documento descreve como coletamos, usamos, armazenamos e protegemos os dados pessoais dos nossos usuários, em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018). Nosso objetivo é garantir transparência e segurança no tratamento de seus dados. Leia atentamente antes de utilizar nossos serviços.</p>
+
+  <ol>
+    <li>
+      <strong>Quem Somos</strong><br />
+      O LembraQr é uma plataforma que oferece produtos físicos, como QR codes em adesivos, placas ou outros formatos, integrados a funcionalidades digitais, como memoriais online personalizados. Nosso propósito é permitir que os usuários criem e acessem memoriais digitais de forma prática e segura, vinculados a produtos físicos, para preservar memórias e histórias.
+    </li>
+
+    <li>
+      <strong>Quais Dados Coletamos</strong><br />
+      Para oferecer nossos serviços, coletamos os seguintes tipos de dados pessoais:
+      <ul>
+        <li><strong>Dados Cadastrais</strong>: Nome, e-mail, telefone e outros dados de contato fornecidos durante o cadastro ou aquisição de produtos.</li>
+        <li><strong>Dados de Pagamento</strong>: Informações necessárias para processar transações, como dados de cartão de crédito ou outros métodos de pagamento, coletados por plataformas de pagamento seguras.</li>
+        <li><strong>Conteúdo do Usuário</strong>: Textos, imagens, vídeos ou outros materiais enviados pelos usuários para personalização de memoriais online.</li>
+        <li><strong>Dados de Navegação</strong>: Informações coletadas durante o uso do site, como endereço IP, tipo de dispositivo, navegador, páginas visitadas, tempo de navegação e interações com a plataforma.</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Como Coletamos os Dados</strong><br />
+      Os dados são coletados das seguintes formas:
+      <ul>
+        <li>Por meio de formulários preenchidos voluntariamente pelo usuário no site ou aplicativo, como durante o cadastro ou criação de memoriais.</li>
+        <li>Durante o processo de compra de produtos físicos ou assinatura de serviços digitais.</li>
+        <li>Automaticamente, por meio de cookies e tecnologias de rastreamento, ao acessar o site ou utilizar os serviços digitais.</li>
+        <li>Através do conteúdo enviado pelo usuário para personalização dos memoriais online.</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Finalidade da Coleta de Dados</strong><br />
+      Os dados coletados são utilizados para as seguintes finalidades:
+      <ul>
+        <li>Cadastro e autenticação de usuários na plataforma.</li>
+        <li>Criação, personalização e manutenção de memoriais online.</li>
+        <li>Gestão de pedidos de produtos físicos e serviços digitais.</li>
+        <li>Processamento de pagamentos de forma segura.</li>
+        <li>Comunicação com os usuários, incluindo envio de notificações sobre pedidos, atualizações de serviços ou suporte técnico.</li>
+        <li>Melhoria contínua dos serviços, por meio de análises de uso e desempenho da plataforma.</li>
+        <li>Cumprimento de obrigações legais ou regulatórias.</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Base Legal para o Tratamento de Dados</strong><br />
+      O tratamento de dados pessoais pelo LembraQr é baseado nas seguintes hipóteses previstas na LGPD:
+      <ul>
+        <li><strong>Consentimento</strong>: Para coleta de dados fornecidos voluntariamente, como conteúdo de memoriais ou dados cadastrais, quando o usuário expressamente concorda.</li>
+        <li><strong>Execução de Contrato</strong>: Para processar pedidos, gerenciar contas ou fornecer acesso a serviços digitais contratados.</li>
+        <li><strong>Obrigação Legal</strong>: Para cumprir exigências legais, como emissão de notas fiscais ou resposta a autoridades.</li>
+        <li><strong>Legítimo Interesse</strong>: Para análises de navegação e melhoria dos serviços, desde que não prejudiquem os direitos dos titulares.</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Compartilhamento de Dados</strong><br />
+      O LembraQr pode compartilhar dados pessoais com terceiros nas seguintes situações:
+      <ul>
+        <li>Com plataformas de pagamento, para processar transações de forma segura.</li>
+        <li>Com provedores de serviços de hospedagem e armazenamento em nuvem, para garantir o funcionamento dos memoriais online.</li>
+        <li>Com ferramentas de análise (como Google Analytics), para monitorar o desempenho do site, utilizando dados anonimizados sempre que possível.</li>
+        <li>Com autoridades competentes, quando exigido por lei ou para proteger direitos legais.</li>
+      </ul>
+      Todo compartilhamento é realizado com contratos que garantem a proteção dos dados e limitam seu uso às finalidades específicas.
+    </li>
+
+    <li>
+      <strong>Segurança dos Dados</strong><br />
+      Adotamos medidas técnicas e organizacionais para proteger os dados pessoais, incluindo:
+      <ul>
+        <li>Criptografia AES-256 para armazenamento de dados sensíveis.</li>
+        <li>Protocolo HTTPS para comunicação segura entre o usuário e nossos servidores.</li>
+        <li>Firewalls e sistemas de detecção de intrusão para proteger nossos servidores.</li>
+        <li>Políticas internas de acesso restrito aos dados por funcionários autorizados.</li>
+      </ul>
+      Apesar dessas medidas, nenhum sistema é completamente imune a riscos. Em caso de incidentes de segurança, os usuários afetados serão notificados, conforme exigido pela LGPD.
+    </li>
+
+    <li>
+      <strong>Direitos do Titular dos Dados</strong><br />
+      Conforme a LGPD, o usuário tem os seguintes direitos em relação aos seus dados pessoais:
+      <ul>
+        <li><strong>Confirmação e Acesso</strong>: Verificar se tratamos seus dados e acessar os dados armazenados.</li>
+        <li><strong>Correção</strong>: Solicitar a atualização ou correção de dados incompletos, inexatos ou desatualizados.</li>
+        <li><strong>Exclusão</strong>: Solicitar a exclusão de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD.</li>
+        <li><strong>Portabilidade</strong>: Solicitar a transferência de seus dados para outro fornecedor de serviços, quando tecnicamente viável.</li>
+        <li><strong>Revogação de Consentimento</strong>: Retirar o consentimento previamente dado, quando aplicável.</li>
+        <li><strong>Oposição</strong>: Opor-se ao tratamento de dados com base em legítimo interesse, em caso de irregularidades.</li>
+        <li><strong>Informação sobre Compartilhamento</strong>: Saber com quais entidades seus dados foram compartilhados.</li>
+      </ul>
+      Para exercer esses direitos, entre em contato pelo e-mail <a href="mailto:support@lembraqr.com">support@lembraqr.com</a>. Responderemos às solicitações no prazo legal.
+    </li>
+
+    <li>
+      <strong>Uso de Cookies e Tecnologias de Rastreamento</strong><br />
+      Utilizamos cookies e tecnologias similares para melhorar a experiência do usuário e analisar o desempenho do site. Os tipos de cookies incluem:
+      <ul>
+        <li><strong>Cookies Funcionais</strong>: Necessários para o funcionamento do site, como autenticação de login e manutenção de sessões.</li>
+        <li><strong>Cookies de Desempenho</strong>: Coletam dados anônimos sobre o uso do site para melhorar sua funcionalidade.</li>
+        <li><strong>Cookies de Publicidade</strong>: Usados para personalizar anúncios, quando aplicável, com base em interesses do usuário.</li>
+      </ul>
+      O usuário pode gerenciar preferências de cookies nas configurações do navegador, mas a desativação de cookies funcionais pode comprometer o uso do site.
+    </li>
+
+    <li>
+      <strong>Tempo de Retenção dos Dados</strong><br />
+      Os dados pessoais são retidos pelo tempo necessário para cumprir as finalidades descritas, conforme a seguir:
+      <ul>
+        <li><strong>Dados Cadastrais</strong>: Mantidos enquanto a conta do usuário estiver ativa ou pelo prazo necessário para cumprir obrigações legais (ex.: 5 anos para notas fiscais).</li>
+        <li><strong>Conteúdo do Usuário</strong>: Armazenado enquanto o memorial online estiver ativo. Após o encerramento da conta ou inatividade por 12 meses, os dados serão excluídos ou anonimizados, salvo se exigido por lei.</li>
+        <li><strong>Dados de Navegação</strong>: Retidos por até 6 meses, sendo anonimizados após esse período, exceto quando exigido por lei.</li>
+      </ul>
+      Após o término do período de retenção, os dados serão excluídos ou anonimizados de forma segura.
+    </li>
+
+    <li>
+      <strong>Responsável pelo Tratamento de Dados</strong><br />
+      O LembraQr é o controlador dos dados pessoais tratados no âmbito dos nossos serviços. Para dúvidas, solicitações ou reclamações, entre em contato com nosso Encarregado de Proteção de Dados (DPO) pelo e-mail: <a href="mailto:support@lembraqr.com">support@lembraqr.com</a>.
+    </li>
+
+    <li>
+      <strong>Alterações na Política de Privacidade</strong><br />
+      Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças em nossas práticas ou na legislação aplicável. A versão atualizada será publicada nesta página, e os usuários serão notificados por e-mail ou pelo site, quando necessário. Recomendamos revisar esta política regularmente. O uso continuado dos serviços após alterações constitui aceitação das novas condições.
+    </li>
+
+    <li>
+      <strong>Lei Aplicável</strong><br />
+      Esta Política é regida pelas leis da República do Brasil, em especial a LGPD. Disputas relacionadas serão resolvidas preferencialmente por meios extrajudiciais, como mediação, ou, se necessário, pelos tribunais competentes de Campo Mourão, PR.
+    </li>
+  </ol>
+</main>
+
+<footer class="footer_fixado" aria-label="Rodapé da página">
+  <p>© 2025 LembraQr - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

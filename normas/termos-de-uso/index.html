@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Termos de Uso - LembraQr</title>
+  <style>
+  /* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f2f2;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Título */
+.p_titulo_container {
+  position: relative;
+  width: 85%;
+  max-width: 1200px;
+  margin-top: 6vh;
+  border-radius: 20px;
+  overflow: visible;
+}
+
+.p_titulo_container::before {
+  content: "";
+  position: absolute;
+  inset: 5%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  filter: brightness(1.2) contrast(1.1);
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.p_titulo_container::after {
+  content: "";
+  position: absolute;
+  inset: 5%;
+  border-radius: 20px;
+  background: radial-gradient(
+    circle,
+    transparent 70%,
+    rgba(255, 255, 255, 0.5) 85%,
+    rgba(255, 255, 255, 0.85) 100%
+  );
+  box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.p_titulo {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 30px 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  user-select: none;
+}
+
+.p_titulo:hover {
+  transform: scale(1.015);
+}
+
+.p_titulo h1 {
+  font-size: clamp(2rem, 4.2vw, 4rem);
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+/* Conteúdo dos Termos */
+.p_termos_container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 5vh auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #333;
+  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+}
+
+.p_termos_container h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #444;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.p_termos_container p,
+.p_termos_container li {
+  margin-bottom: 1rem;
+}
+
+.p_termos_container ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.p_termos_container ol li {
+  margin-bottom: 0.8rem;
+}
+
+/* Rodapé */
+.footer_fixado {
+  width: 95%;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+  background: rgba(80, 80, 80, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  user-select: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .p_titulo_container {
+    width: 95%;
+  }
+
+  .p_titulo {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .p_titulo h1 {
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+  }
+
+  .p_termos_container {
+    padding: 20px;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="p_titulo_container" aria-label="Título da página Termos de Uso">
+  <div class="p_titulo">
+    <h1>Termos de Uso</h1>
+  </div>
+</div>
+
+<main class="p_termos_container" role="main" tabindex="0">
+  <p>Bem-vindo ao LembraQr. Estes Termos de Uso ("Termos") regem o uso dos nossos serviços, incluindo a aquisição de produtos físicos, como QR codes, e o acesso a memoriais online ou outras funcionalidades digitais oferecidas pela LembraQr. Ao utilizar nossos serviços, você ("Usuário") concorda em cumprir estes Termos, que formam um contrato legal entre você e a LembraQr. Leia atentamente antes de prosseguir.</p>
+
+  <ol>
+    <li>
+      <strong>Aceitação dos Termos</strong><br />
+      Ao acessar, adquirir ou utilizar qualquer um dos serviços da LembraQr, você declara ter lido, compreendido e concordado em estar vinculado a estes Termos, bem como a todas as leis e regulamentos aplicáveis. Caso não concorde, você não deve utilizar nossos serviços.
+    </li>
+    <li>
+      <strong>Idade Mínima para Uso</strong><br />
+      Os Serviços da LembraQr destinam-se a pessoas com 18 anos ou mais. Menores de idade somente poderão utilizar os Serviços sob supervisão e com autorização expressa de um responsável legal. Ao utilizar os Serviços, o Usuário declara que possui capacidade legal para firmar este contrato ou que está devidamente autorizado por seu responsável.
+    </li>
+
+    <li>
+      <strong>Definições</strong><br />
+      Para os fins destes Termos, aplicam-se as seguintes definições:
+      <ul>
+        <li>“Serviços”: Incluem a venda de produtos físicos (como QR codes em adesivos, placas ou outros formatos) e o acesso a funcionalidades digitais, como memoriais online, bem como quaisquer outros produtos ou serviços oferecidos pela LembraQr;</li>
+        <li>“Produto Físico”: Qualquer item físico adquirido do LembraQr, como QR codes em adesivos, placas ou outros formatos, que podem ou não ser vinculados a funcionalidades digitais;</li>
+        <li>“Memorial Online”: Plataforma digital acessível por meio de QR codes ou outros métodos de acesso, disponível mediante assinatura ou outra forma de pagamento;</li>
+        <li>“Conteúdo do Usuário”: Textos, imagens, vídeos ou outros dados fornecidos pelo Usuário para inclusão nos Serviços digitais;</li>
+        <li>“Nós” ou “LembraQr”: A empresa responsável pela oferta dos Serviços.</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Descrição dos Serviços</strong><br />
+      A LembraQr oferece produtos físicos, como QR codes, que podem ser vinculados a funcionalidades digitais, como memoriais online personalizados. A aquisição inicial de um produto físico pode incluir a ativação de um memorial online ou outro serviço digital, sujeito a pagamento único, assinatura ou outra modalidade de cobrança, conforme especificado no momento da compra. Após a aquisição inicial, o Usuário pode adquirir produtos físicos adicionais vinculados ao mesmo serviço digital, pagando apenas o valor unitário do produto físico, que varia conforme o tipo ou formato. Os serviços digitais, como memoriais online, podem requerer assinaturas ou outros pagamentos periódicos para permanecerem ativos. Caso o pagamento periódico não seja renovado, o serviço digital será desativado, podendo tornar os produtos físicos associados inoperantes. A LembraQr reserva-se o direito de introduzir novos produtos, formatos, planos de pagamento ou métodos de acesso, que serão comunicados no momento da oferta.
+    </li>
+
+    <li>
+      <strong>Licença de Uso</strong><br />
+      Concedemos ao Usuário uma licença limitada, não exclusiva, intransferível e revogável para acessar e utilizar os Serviços, exclusivamente para fins pessoais e não comerciais, em conformidade com estes Termos. Esta licença não confere direitos de propriedade sobre os Serviços ou qualquer conteúdo da LembraQr.
+    </li>
+
+    <li>
+      <strong>Conta do Usuário</strong><br />
+      O acesso a serviços digitais pode exigir a criação de uma conta. O Usuário é responsável por manter a confidencialidade de suas credenciais (login e senha) e por todas as atividades realizadas em sua conta. Qualquer uso não autorizado deve ser comunicado imediatamente à LembraQr. A LembraQr reserva-se o direito de suspender ou encerrar contas em caso de uso indevido ou violação destes Termos.
+    </li>
+
+    <li>
+      <strong>Pagamentos e Condições</strong><br />
+      <ul>
+        <li><strong>Produtos Físicos</strong>: O pagamento por produtos físicos, como QR codes, é único e por unidade, variando conforme o tipo, formato ou outras especificações. Não há taxas recorrentes associadas aos produtos físicos após a compra, salvo indicação contrária.</li>
+        <li><strong>Serviços Digitais</strong>: O acesso a serviços digitais, como memoriais online, pode requerer assinaturas, pagamentos únicos ou outras modalidades de cobrança, conforme especificado no momento da aquisição. A não renovação de pagamentos periódicos resultará na desativação do serviço digital, podendo tornar os produtos físicos associados inoperantes.</li>
+        <li><strong>Novos Planos ou Produtos</strong>: A LembraQr pode introduzir novos planos de assinatura, tipos de produtos físicos ou métodos de acesso, cujos preços e condições serão informados no momento da oferta.</li>
+        <li><strong>Política de Reembolso</strong>: Compras de produtos físicos não são reembolsáveis, salvo em casos de defeito de fabricação, mediante comprovação. Pagamentos por serviços digitais podem ser reembolsados dentro de 7 dias a partir da compra inicial, desde que o serviço não tenha sido ativado ou personalizado, salvo disposições legais em contrário.</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Conteúdo do Usuário</strong><br />
+      O Usuário é responsável pelo Conteúdo do Usuário enviado aos Serviços, garantindo que não viole direitos de terceiros, incluindo direitos autorais, privacidade ou propriedade intelectual. A LembraQr reserva-se o direito de remover qualquer conteúdo considerado inadequado, ilegal ou em violação destes Termos, sem aviso prévio.
+    </li>
+
+    <li>
+      <strong>Segurança e Proteção de Dados</strong><br />
+      A LembraQr implementa medidas de segurança avançadas, incluindo criptografia AES-256, para proteger comunicações e dados armazenados. Contudo, considerando a natureza evolutiva da segurança digital, não podemos garantir imunidade absoluta contra incidentes, como acessos não autorizados ou vazamentos de dados. Assim, salvo em casos de negligência grave comprovada da LembraQr, não nos responsabilizamos por danos decorrentes de tais incidentes, incluindo perda de dados ou violações de privacidade. <br />
+      Todos os dados são tratados em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD). Ao utilizar nossos serviços, o Usuário consente com o tratamento de seus dados pessoais nos termos da nossa Política de Privacidade.
+    </li>
+
+    <li>
+      <strong>Propriedade Intelectual</strong><br />
+      Todos os direitos autorais, marcas registradas, patentes e demais direitos de propriedade intelectual relacionados aos Serviços, incluindo o design de produtos físicos e plataformas digitais, pertencem à LembraQr ou são licenciados para nós. O Usuário não adquire quaisquer direitos sobre esses elementos, exceto pela licença de uso prevista nestes Termos.
+    </li>
+
+    <li>
+      <strong>Restrições de Uso</strong><br />
+      É vedado ao Usuário:
+      <ul>
+        <li>Modificar, copiar, distribuir ou explorar comercialmente os Serviços ou qualquer parte deles sem autorização;</li>
+        <li>Utilizar os Serviços para fins ilegais, fraudulentos ou não autorizados;</li>
+        <li>Tentar acessar, de forma não autorizada, os sistemas ou servidores da LembraQr, incluindo o uso de ferramentas de raspagem ou automação não aprovadas;</li>
+        <li>Transferir ou compartilhar sua conta ou acesso aos Serviços com terceiros sem permissão expressa da LembraQr.</li>
+      </ul>
+      A violação destas restrições pode resultar na suspensão ou encerramento da conta e dos Serviços, além de possíveis responsabilidades legais.
+    </li>
+
+    <li>
+      <strong>Encerramento dos Serviços</strong><br />
+      A LembraQr reserva-se o direito de suspender ou encerrar o acesso aos Serviços, sem aviso prévio, em caso de violação destes Termos, não pagamento de valores devidos ou por qualquer motivo legítimo, incluindo a descontinuação de um serviço. Caso um serviço digital seja desativado por falta de renovação de pagamento, o conteúdo associado será removido permanentemente após um período de carência de 30 dias, e quaisquer produtos físicos vinculados podem tornar-se inoperantes.
+    </li>
+
+    <li>
+      <strong>Alterações e Descontinuação de Funcionalidades</strong><br />
+      A LembraQr se reserva o direito de modificar, suspender ou descontinuar, a qualquer momento e sem aviso prévio, qualquer funcionalidade dos Serviços, incluindo produtos físicos e serviços digitais, por motivos técnicos, comerciais ou legais. Quando possível, os Usuários serão notificados com antecedência razoável. A continuidade do uso dos Serviços após tais mudanças constitui aceitação das modificações.
+    </li>
+
+
+    <li>
+      <strong>Isenção de Responsabilidade</strong><br />
+      Os Serviços são fornecidos "no estado em que se encontram", sem garantias implícitas ou explícitas de adequação a uma finalidade específica ou disponibilidade ininterrupta. A LembraQr não se responsabiliza por danos diretos, indiretos, incidentais ou consequenciais decorrentes do uso ou impossibilidade de uso dos Serviços, incluindo, mas não se limitando a, perda de dados, interrupção de acesso ou falhas de funcionalidade.
+    </li>
+
+    <li>
+      <strong>Modificações aos Termos</strong><br />
+      A LembraQr reserva-se o direito de modificar estes Termos a qualquer momento, publicando a versão atualizada nesta página ou notificando os Usuários por outros meios. O uso continuado dos Serviços após tais alterações constitui aceitação das novas condições. Recomendamos revisar estes Termos periodicamente.
+    </li>
+
+    <li>
+      <strong>Lei Aplicável e Resolução de Disputas</strong><br />
+      Estes Termos são regidos pelas leis da República do Brasil. Disputas decorrentes destes Termos serão resolvidas, preferencialmente, por meios extrajudiciais, como mediação. Caso necessário, as partes concordam em submeter-se à jurisdição dos tribunais competentes de Campo Mourão, PR.
+    </li>
+
+    <li>
+      <strong>Contato</strong><br />
+      Para dúvidas, solicitações ou reclamações, entre em contato pelo e-mail: <a href="mailto:support@lembraqr.com">support@lembraqr.com</a>.
+    </li>
+  </ol>
+</main>
+
+<footer class="footer_fixado" aria-label="Rodapé da página">
+  <p>© 2025 LembraQr - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
